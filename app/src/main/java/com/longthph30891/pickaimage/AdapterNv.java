@@ -45,7 +45,6 @@ public class AdapterNv extends RecyclerView.Adapter<AdapterNv.ViewHolder> {
         Glide.with(context).load(nv.getImg())
                 .diskCacheStrategy(DiskCacheStrategy.DATA)
                 .into(holder.imgNv);
-
     }
 
     @Override

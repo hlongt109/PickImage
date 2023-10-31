@@ -12,19 +12,14 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.Toast;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
@@ -111,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                String ten = edten.getText().toString();
                String id = UUID.randomUUID().toString();
-               //
+                //
                 NhanVat nv = new NhanVat(id,ten,selectedImageUrl);
                 Log.d("url","url:"+selectedImageUrl);
                 HashMap<String,Object> map = nv.convertHashMap();
